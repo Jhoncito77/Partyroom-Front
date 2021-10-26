@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Proyecto ciclo 3 MinTic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesPartyRoom.js"></script>
+        <script type="text/javascript" src="js/funcionesClientes.js"></script>
+        <script type="text/javascript" src="js/funcionesMensajes.js"></script>
+        <script type="text/javascript" src="js/funcionesCategoria.js"></script>
+        <script type="text/javascript" src="js/funcionesReservaciones.js"></script>
+
+    </head>
+    <body>
+
+        <h1>Categoria</h1>
+        <div id="resultadoCategoria"></div>
+        <br>
+        <button onclick= "traerCategoria()">Consultar Categorias</button>
+        <br>
+        <div>
+            
+            <input type="text" id="nameCategoria" placeholder="name", value="">
+            <input type="text" id="descriptionCategoria" placeholder="description", value="">
+            
+        </div>
+        <br>
+        <button onclick="guardarCategoria()">Guardar Categoria</button>
+
+        <br><br>
+
+
+        <h1>Salones</h1>
+
+        <div id="resultado"></div>
+        <br>
+        <button onclick= "traerSalones()">Consultar salones</button><br>
+        <div>
+            
+            <input type="text" id="owner" placeholder="owner">
+            <input type="number" id="capacity" placeholder="capacity">
+            
+            <input type="text" id="nameSalon" placeholder="name">
+            <input type="text" id="descriptionSalon" placeholder="descripcion">
+            
+        </div>
+        <br>
+        <button onclick="guardarSalon()">Guardar salon</button>
+        
+        <br><br>
+
+        
+        
+        <h1>Clientes</h1>
+        <div id="resultadoClientes"></div>
+        <br>
+        <button onclick= "traerClientes()">Consultar clientes</button>
+        <br>
+        <div>
+            
+            <input type="text" id="nameCliente" placeholder="name">
+            <input type="text" id="email" placeholder="email">
+            <input type="text" id="password" placeholder="password">
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <br>
+        <button onclick="guardarCliente()">Guardar cliente</button>
+        
+        <br><br>
+
+
+        <h1>Mensajes</h1>
+        <div id="resultadoMensaje"></div>
+        <br>
+        <button onclick= "traerMensajes()">Consultar mensajes</button>
+        <br>
+        <div>
+            
+            <input type="text" id="messagetext" placeholder="Mensaje", size=100 value="">
+
+            
+        </div>
+        <br>
+        <button onclick="guardarMensaje()">Guardar mensaje</button>
+
+        <br><br>
+
+
+        
+
+        <h1>Reservaciones</h1>
+        <div id="resultadoReservaciones"></div>
+        <br>
+        <button onclick= "traerReservaciones()">Consultar Reservas</button>
+        <br>
+        <div>
+            
+            <input type="date" id="startDate" placeholder="startdate", value="">
+            <input type="date" id="devolutionDate" placeholder="devolutionDate", value="">
+            
+
+            
+        </div>
+        <br>
+        <button onclick="guardarReservacion()">Guardar Reservacion</button>
+
+        <br><br>
+
+
+    </body>
+</html>
