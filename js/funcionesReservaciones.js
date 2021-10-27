@@ -60,6 +60,7 @@ function editarReservacion(idElemento){
     
     newStartdate = new Date(fecha1[0],fecha1[1],fecha1[2]);
     newdevolutionDate= new Date(fecha2[0], fecha2[1], fecha2[2]);
+    console.log(newStartdate,newdevolutionDate);
     let myData = {
         idReservation:idElemento,
         startDate:newStartdate,
