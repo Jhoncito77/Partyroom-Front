@@ -55,11 +55,15 @@ function guardarReservacion(){
 }
 
 function editarReservacion(idElemento){
-    let fecha1 = prompt("Nueva fecha de inicio (aaaa/mm/dd):").split("/");
-    let fecha2 = prompt("Nueva fecha de devolucion (aaaa/mm/dd):").split("/");
-    
-    newStartdate = new Date(fecha1[0],fecha1[1],fecha1[2]);
-    newdevolutionDate= new Date(fecha2[0], fecha2[1], fecha2[2]);
+    let newStartdateAño = prompt("Nueva fecha de inicio:\n\nAño:");
+    let newStartdateMes = prompt("Nueva fecha de inicio:\n\nMes:");
+    let newStartdateDia = prompt("Nueva fecha de inicio:\n\nDía:");
+    let newdevolutionDateAño = prompt("Nueva fecha de devolucion:\n\nAño:");
+    let newdevolutionDateMes = prompt("Nueva fecha de devolucion:\n\nMes:");
+    let newdevolutionDateDía = prompt("Nueva fecha de devolucion:\n\nDía:");
+
+    let newStartdate = new Date(newStartdateAño,newStartdateMes-1,newStartdateDia);
+    let newdevolutionDate = new Date(newdevolutionDateAño,newdevolutionDateMes-1,newdevolutionDateDía);
     console.log(newStartdate,newdevolutionDate);
     let myData = {
         idReservation:idElemento,
