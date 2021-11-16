@@ -13,7 +13,7 @@ function traerSalones() {
                 console.log("select"+name.id);
             })
         }
-        }
+        
         });
 }
 
