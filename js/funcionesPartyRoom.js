@@ -9,7 +9,7 @@ function traerSalones() {
             crearTabla(respuesta);
             let $select = $("#select-category");
             $.each(respuesta, function (id,name){
-                $select.append('<option value='+name.id'>'+name.name+'</option>');
+                $select.append('<option value='+name.id+'>'+name.name+'</option>');
                 console.log("select"+name.id);
             })
         }

@@ -6,8 +6,9 @@ function traerCategoria() {
         success:function(respuesta){
             $("#resultadoCategoria").empty();
             crearTabla4(respuesta);
-            
+        } 
         });
+    
 }
 
 function crearTabla4(items){
