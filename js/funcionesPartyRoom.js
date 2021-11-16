@@ -37,6 +37,7 @@ function guardarSalon(){
         capacity:$("#capacity").val(),
         name:$("#nameSalon").val(),
         description:$("#descriptionSalon").val(),
+        category:{id:+$("#select-category").val()},
     }
     let dataToSend=JSON.stringify(myData);
     $.ajax({
