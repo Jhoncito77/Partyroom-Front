@@ -7,6 +7,12 @@ function traerSalones() {
             $("#resultado").empty();
             console.log(respuesta);
             crearTabla(respuesta);
+            let $select = $("#select-category");
+            $.each(respuesta, function (id,name){
+                $select.append('<option value='+name.id'>'+name.name+'</option>');
+                console.log("select"+name.id);
+            })
+        }
         }
         });
 }

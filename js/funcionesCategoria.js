@@ -5,9 +5,8 @@ function traerCategoria() {
         datatype:"JSON",
         success:function(respuesta){
             $("#resultadoCategoria").empty();
-            console.log(respuesta);
             crearTabla4(respuesta);
-        }
+            
         });
 }
 
