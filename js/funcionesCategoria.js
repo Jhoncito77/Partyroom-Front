@@ -7,10 +7,9 @@ function traerCategoria() {
             $("#resultadoCategoria").empty();
             crearTabla4(respuesta);
             let $select = $("#select-category");
-            $.each(respuesta, function (id,name){
-                $select.append('<option value='+name.id+'>'+name.name+'</option>');
-                console.log("select"+name.id);
-            })
+            for(i=0;i<respuesta.length;i++){
+                $select.append('<option value='+respuesta[i].id+'>'+respuesta[i].name+'</option>');
+            }
         } 
         });
     
