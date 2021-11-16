@@ -20,7 +20,7 @@ function crearTabla2(items){
         myTable+="<td>"+items[i].email+"</td>";
         myTable+="<td>"+items[i].password+"</td>";
         myTable+="<td>"+items[i].age+"</td>";
-        myTable+="<td> <button onclick='editarCliente("+items[i].idClient+")'>Detalles</button>";
+        myTable+="<td> <button onclick='editarCliente("+items[i].idClient+")'>Editar</button>";
         myTable+="<td> <button onclick='borrarCliente("+items[i].idClient+")'>Borrar</button>";
         myTable+="</tr>";
     }

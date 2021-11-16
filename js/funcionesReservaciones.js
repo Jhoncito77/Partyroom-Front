@@ -19,7 +19,7 @@ function crearTabla5(items){
         myTable+="<td>"+items[i].startDate+"</td>";
         myTable+="<td>"+items[i].devolutionDate+"</td>";
         
-        myTable+="<td> <button onclick='editarReservacion("+items[i].idReservation+")'>Detalles</button>";
+        myTable+="<td> <button onclick='editarReservacion("+items[i].idReservation+")'>Editar</button>";
         myTable+="<td> <button onclick='borrarReservacion("+items[i].idReservation+")'>Borrar</button>";
         myTable+="</tr>";
     }

@@ -17,7 +17,7 @@ function crearTabla3(items){
         myTable+="<tr>";
         myTable+="<td>"+items[i].idMessage+"</td>";
         myTable+="<td>"+items[i].messageText+"</td>";
-        myTable+="<td> <button onclick='editarMensaje("+items[i].idMessage+")'>detalles</button>";
+        myTable+="<td> <button onclick='editarMensaje("+items[i].idMessage+")'>Editar</button>";
         myTable+="<td> <button onclick='borrarMensaje("+items[i].idMessage+")'>Borrar</button>";
         myTable+="</tr>";
     }
