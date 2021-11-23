@@ -8,6 +8,7 @@ function traerCategoria() {
             crearTabla4(respuesta);
             
             let $select = $("#select-category");
+            $select.empty();
             for(i=0;i<respuesta.length;i++){
                 $select.append('<option value='+respuesta[i].id+'>'+respuesta[i].name+'</option>');
             }
@@ -57,7 +58,7 @@ function guardarCategoria(){
             
             traerCategoria();
             alert("Guardado exitoso.");
-            window.location.reload();
+            
         }
         });
 }
