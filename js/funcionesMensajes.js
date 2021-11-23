@@ -26,6 +26,7 @@ function crearTabla3(items){
 }
 
 function guardarMensaje(){
+    if($("#messagetext").val() !== ""){
     let myData = {
         
         messageText:$("#messagetext").val()
@@ -46,7 +47,9 @@ function guardarMensaje(){
             alert("Guardado exitoso.");
             
         }
-        });
+        });}else{
+            alert("No es posible enviar mensajes vacios")
+        }
 }
 
 

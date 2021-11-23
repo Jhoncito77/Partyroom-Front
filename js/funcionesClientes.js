@@ -29,6 +29,7 @@ function crearTabla2(items){
 }
 
 function guardarCliente(){
+    if($("#nameCliente").val() !== "" && $("#email").val() !== "" && $("#password").val() !== "" && $("#age").val() !== ""){
     let myData = {
         
         name:$("#nameCliente").val(),
@@ -54,7 +55,9 @@ function guardarCliente(){
             alert("Guardado exitoso.");
             
         }
-        });
+        });}else{
+            alert("Todos los campos son requeridos");
+        }
 }
 
 function editarCliente(idElemento){

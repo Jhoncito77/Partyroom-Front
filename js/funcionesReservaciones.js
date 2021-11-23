@@ -28,6 +28,7 @@ function crearTabla5(items){
 }
 
 function guardarReservacion(){
+    if($("#startDate").val()!==""&&$("#devolutionDate").val()!==""){
     let myData = {
         
         startDate:$("#startDate").val(),
@@ -51,7 +52,9 @@ function guardarReservacion(){
             alert("Guardado exitoso.");
             
         }
-        });
+        });}else{
+            alert("Ingrese los datos requeridos para la reservación");
+        }
 }
 
 function editarReservacion(idElemento){

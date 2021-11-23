@@ -35,6 +35,8 @@ function crearTabla4(items){
 }
 
 function guardarCategoria(){
+    if($("#nameCategoria").val() !== "" && $("#descriptionCategoria").val() !== ""){
+        
     let myData = {
         
         name:$("#nameCategoria").val(),
@@ -60,7 +62,9 @@ function guardarCategoria(){
             alert("Guardado exitoso.");
             
         }
-        });
+        });}else{
+            alert("Todos los campos son requeridos");
+        }
 }
 
 function editarCategoria(idElemento){

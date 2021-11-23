@@ -31,6 +31,7 @@ function crearTabla(items){
 }
 
 function guardarSalon(){
+    if($("#owner").val()!==""&&$("#capacity").val()!==""&&$("#nameSalon").val()!==""&&$("#descriptionSalon").val()!==""){
     let myData = {
         
         owner:$("#owner").val(),
@@ -57,7 +58,9 @@ function guardarSalon(){
             alert("Guardado exitoso.");
             
         }
-        });
+        });}else{
+            alert("Todos los campos son requeridos");
+        }
 }
 
 function editarSalon(idElemento){
