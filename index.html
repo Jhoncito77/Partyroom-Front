@@ -14,15 +14,15 @@
         <script type="text/javascript" src="js/funcionesMensajes.js"></script>
         <script type="text/javascript" src="js/funcionesCategoria.js"></script>
         <script type="text/javascript" src="js/funcionesReservaciones.js"></script>
-
+        <link rel="stylesheet" href="css/estilos.css"></link>
     </head>
     <body>
-
+        <center>
         <h1>Categoria</h1>
         <div id="resultadoCategoria"></div>
         <br>
-        <button onclick= "traerCategoria()">Consultar Categorias</button>
-        <br>
+        <button class="opc1" onclick= "traerCategoria()">Consultar Categorias</button>
+        <br> &nbsp
         <div>
             
             <input type="text" id="nameCategoria" placeholder="name" value="" required>
@@ -30,17 +30,17 @@
             
         </div>
         <br>
-        <input type="submit", onclick="guardarCategoria()", value="Guardar Categoria">
+        <button class="opc2" onclick="guardarCategoria()">Guardar Categoria</button>
 
         <br><br>
-
+        <hr>
 
         <h1>Salones</h1>
 
         <div id="resultado"></div>
         <br>
-        <button onclick= "traerSalones()">Consultar salones</button><br>
-        <div>
+        <button class="opc1" onclick= "traerSalones()">Consultar salones</button><br>&nbsp
+        <div> 
             
             <input type="text" id="owner" placeholder="owner">
             <input type="number" id="capacity" placeholder="capacity">
@@ -51,17 +51,17 @@
             
         </div>
         <br>
-        <button onclick="guardarSalon()">Guardar salon</button>
+        <button class="opc2" onclick="guardarSalon()">Guardar salon</button>
         
         <br><br>
 
-        
+        <hr>
         
         <h1>Clientes</h1>
         <div id="resultadoClientes"></div>
         <br>
-        <button onclick= "traerClientes()">Consultar clientes</button>
-        <br>
+        <button class="opc1" onclick= "traerClientes()">Consultar clientes</button>
+        <br> &nbsp
         <div>
             
             <input type="text" id="nameCliente" placeholder="name">
@@ -70,16 +70,17 @@
             <input type="number" id="age" placeholder="age">
         </div>
         <br>
-        <button onclick="guardarCliente()">Guardar cliente</button>
+        <button class="opc2" onclick="guardarCliente()">Guardar cliente</button>
         
         <br><br>
 
+        <hr>
 
         <h1>Mensajes</h1>
         <div id="resultadoMensaje"></div>
         <br>
-        <button onclick= "traerMensajes()">Consultar mensajes</button>
-        <br>
+        <button class="opc1" onclick= "traerMensajes()">Consultar mensajes</button>
+        <br> &nbsp
         <div>
             
             <input type="text" id="messagetext" placeholder="Mensaje", size=100 value="">
@@ -87,18 +88,18 @@
             
         </div>
         <br>
-        <button onclick="guardarMensaje()">Guardar mensaje</button>
+        <button class="opc2" onclick="guardarMensaje()">Guardar mensaje</button>
 
         <br><br>
 
-
+        <hr>
         
 
         <h1>Reservaciones</h1>
         <div id="resultadoReservaciones"></div>
-        <br>
-        <button onclick= "traerReservaciones()">Consultar Reservas</button>
-        <br>
+        <br> 
+        <button class="opc1" onclick= "traerReservaciones()">Consultar Reservas</button>
+        <br> &nbsp
         <div>
             
             <input type="date" id="startDate" placeholder="startdate", value="">
@@ -108,10 +109,10 @@
             
         </div>
         <br>
-        <button onclick="guardarReservacion()">Guardar Reservacion</button>
+        <button class="opc2" onclick="guardarReservacion()">Guardar Reservacion</button>
 
         <br><br>
 
-
+        </center>
     </body>
 </html>

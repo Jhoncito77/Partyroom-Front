@@ -12,7 +12,8 @@ function traerMensajes() {
 }
 
 function crearTabla3(items){
-    let myTable="<table border=1px>";
+    let myTable="<table border=1px style='background-color:white; border:2px solid green;'>";
+    myTable+="<th>ID</th><th>Mensaje</th><th colspan='2'>Acciones</th>"
     for(i=0;i<items.length;i++){
         myTable+="<tr>";
         myTable+="<td>"+items[i].idMessage+"</td>";

@@ -14,7 +14,8 @@ function traerSalones() {
 }
 
 function crearTabla(items){
-    let myTable="<table border=1px>";
+    let myTable="<table border=1px style='background-color:white; border:2px solid green'>";
+    myTable+="<th>ID</th><th>Propietario</th><th>Capacidad Personas</th><th>Nombre del Salón</th><th>Descripción</th><th>Categoria</th><th colspan='2'>Acciones</th>"
     for(i=0;i<items.length;i++){
         myTable+="<tr>";
         myTable+="<td>"+items[i].id+"</td>";
@@ -22,6 +23,7 @@ function crearTabla(items){
         myTable+="<td>"+items[i].capacity+"</td>";
         myTable+="<td>"+items[i].name+"</td>";
         myTable+="<td>"+items[i].description+"</td>";
+        myTable+="<td>"+items[i].category.name+"</td>"
         myTable+="<td> <button onclick='editarSalon("+items[i].id+")'>Editar</button>";
         myTable+="<td> <button onclick='borrarSalon("+items[i].id+")'>Borrar</button>";
         myTable+="</tr>";

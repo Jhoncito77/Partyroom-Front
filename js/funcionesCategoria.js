@@ -19,7 +19,8 @@ function traerCategoria() {
 }
 
 function crearTabla4(items){
-    let myTable="<table border=1px>";
+    let myTable="<table border=1px style='background-color:white; border:2px solid green;'>";
+    myTable+="<th>ID</th><th>Nombre Categoria</th><th>Descripción</th><th colspan='2'>Acciones</th>"
     for(i=0;i<items.length;i++){
         myTable+="<tr>";
         myTable+="<td>"+items[i].id+"</td>";

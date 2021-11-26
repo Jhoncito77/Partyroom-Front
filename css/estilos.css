@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color:blue;
+    font-size: 40px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button.opc1{
+    background-color: brown;
+    border:2px solid black;
+    color: wheat;
+}
+
+button.opc2{
+    background-color: green;
+    border:2px solid blue;
+    
+}
